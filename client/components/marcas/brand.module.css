@@ -1,0 +1,40 @@
+.clip {
+    background-color: #9bd12e;
+    clip-path: polygon(0 50%, 100% 0, 100% 50%, 0% 100%);
+    position: absolute;
+    font-size: 30px;
+    color: transparent;
+    width: 90%;
+    z-index: 1; /* Asegura que .clip esté por debajo de .titulo */
+}
+
+.clip2 {
+    background-color: #9bd12e;
+    clip-path: polygon(0 50%, 100% 0, 100% 50%, 0% 100%);
+    position: absolute;
+    font-size: 30px;
+    color: transparent;
+    width: 90%;
+    z-index: 1; /* Asegura que .clip esté por debajo de .titulo */
+}
+
+/* This is a simple media query targeting screens with a maximum width of 768px */
+@media screen and (min-width: 768px) {
+ .clip{
+    width: 40%;
+ }
+ .clip2{
+    width: 45%;
+ }
+  }
+  
+
+  @media screen and (min-width: 1150px) {
+    .clip{
+       width: 30%;
+    }
+    .clip2{
+        width: 35%;
+     }
+     }
+
