@@ -19,20 +19,25 @@ import Form from '@/components/form/form'
 import Contacto from '@/components/form/contacto'
 
 export default function Home() {
-  const [anchoPantalla, setAnchoPantalla] = useState(window.innerWidth);
+  const [anchoPantalla, setAnchoPantalla] = useState(0);
 
   useEffect(() => {
-    const actualizarAnchoPantalla = () => {
+    // Access window.innerWidth after component mounts on the client-side
+    setAnchoPantalla(window.innerWidth);
+
+    // Add event listener to update anchoPantalla when window is resized
+    const handleResize = () => {
       setAnchoPantalla(window.innerWidth);
     };
 
-    window.addEventListener('resize', actualizarAnchoPantalla);
+    window.addEventListener('resize', handleResize);
 
-    // Limpia el evento del escuchador al desmontar el componente
+    // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener('resize', actualizarAnchoPantalla);
+      window.removeEventListener('resize', handleResize);
     };
-  }, []); 
+  }, []); // Empty dependency array ensures this effect runs only once after initial render
+ 
   return (
     <main className="min-w-full min-h-screen flex justify-between flex-col overflow-x-hidden ">
       
