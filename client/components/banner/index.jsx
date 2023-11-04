@@ -8,7 +8,7 @@ export default function Banner() {
     <div className='relative'>
       <img src={banner.src} className='w-full max-h-screen border-b relative' />
       <div className='absolute bottom-4 left-0 right-0 text-center'>
-        <Button className='m-auto mb-8 mr-4 bg-green' >Conocenos!</Button>
+        <Button className='m-auto mb-8 mr-4 bg-green2 font-semibold text-xl p-6' >Conocenos!</Button>
       </div>
     </div>
   );

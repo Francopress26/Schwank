@@ -44,8 +44,8 @@ export default function Nav() {
           <Link href="#">Login</Link>
         </NavbarItem> */}
         <NavbarItem>
-          <Button as={Link} className="bg-green" href="#" variant="flat">
-            Contactate
+          <Button as={Link} className="bg-greenC font-semibold" href="#" variant="flat">
+            Contactanos
           </Button>
         </NavbarItem>
       </NavbarContent>

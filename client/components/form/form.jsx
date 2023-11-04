@@ -1,4 +1,4 @@
-import { Input, Textarea } from '@nextui-org/react'
+import { Button, Input, Textarea } from '@nextui-org/react'
 import React from 'react'
 
 const Form = () => {
@@ -16,6 +16,7 @@ const Form = () => {
       className=""
       color='success'
     />
+  <Button className=' bg-greenC font-semibold rounded-full w-1/2 text-xl'>Enviar</Button>
 </form>
 
   )

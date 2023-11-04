@@ -19,7 +19,7 @@ export default function BannerDes() {
           </svg>
         </a> */}
         <a href="#" className=" text-5xl w-64 inline-flex justify-center  items-center py-3 px-5   text-center  rounded-lg">
-        <Button className='m-auto mb-8 mr-4 bg-greenC bg-opacity-80 rounded-full w-full h-full text-2xl' >Conocenos!</Button>
+        <Button className='m-auto mb-8 mr-4 bg-green2  font-semibold rounded-xl w-full h-full text-2xl' >Conocenos!</Button>
         </a>
       </div>
  

@@ -2,7 +2,7 @@ import React from 'react'
 import Chip from './chip'
 const Chips = () => {
   return (
-    <div className='flex justify-around flex-col items-center w-full p-4 md:flex-row'>
+    <div className='flex justify-around flex-col items-center w-full p-4 md:flex-row md:justify-between'>
             <Chip 
             title='Academia de Tenis y Padel' 
             quote='somos los mejores' 

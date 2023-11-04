@@ -3,7 +3,7 @@ import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nex
 import ball from '../../assets/MdiTennisBallOutline.svg'
 export default function Chip({title,quote,description}) {
   return (
-    <Card className="max-w-[250px] m-2 text-center">
+    <Card className="max-w-[300px] m-2 text-center md:max-w-[350px] md:h-min ">
       <CardHeader className="flex gap-3 flex-col items-center justify-center">
         <Image
           alt="nextui logo"
